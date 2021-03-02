@@ -12,7 +12,7 @@ jobs:
           command: |
             # pytest would be a dep in requirements.txt
             python -m pytest --cov croissant --cov-report xml
-            bash <(curl -s https://codecov.io/bash) -t b7cffd27-ebe7-467e-ad67-cb600f258c4b
+            bash <(curl -s https://codecov.io/bash) -t ${CODECOV_TOKEN}
           name: Test
 
   build377:
